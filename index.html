@@ -34,10 +34,14 @@
             //desenhando as raquete esquerda
             canvasCtx.fillRect(10,200,lineWidth, 200)
 
-            
+
             //desenhando as raquete direita
             canvasCtx.fillRect(window.innerWidth - lineWidth - 10,200,lineWidth, 200)
-        }
+
+            //desenhando a bolinha 
+            canvasCtx.beginPath()
+            canvasCtx.arc(500,300,20,0,2 * Math.PI, false)
+            canvasCtx.fill()        }
 
         setup()
         draw()
